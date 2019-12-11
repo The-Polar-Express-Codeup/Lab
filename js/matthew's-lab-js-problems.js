@@ -2,7 +2,7 @@
 
 // alert("Connected!");
 
-// TODO Source: Edabit
+// TODO Source: https://edabit.com/challenge/5vAX6Lw2Yrgdkx7Qi
 // TODO Problem 1: Is the Word Singular or Plural?
 // TODO Description: Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
 
