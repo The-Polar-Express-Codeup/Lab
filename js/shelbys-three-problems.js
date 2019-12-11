@@ -36,3 +36,4 @@ console.log(firstLast(["edabit", 13, null, false, true])); // ["edabit", true]
 console.log(firstLast([undefined, 4, "6", "hello", null])); // [undefined, null]
 
 //Source:https://stackoverflow.com/questions/39967872/return-a-new-array-with-the-first-and-last-element-of-the-passed-array
+
