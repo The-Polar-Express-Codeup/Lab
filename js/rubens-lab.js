@@ -3,8 +3,10 @@
 // the point of this challenge is to write your own.
 
 function revNumbers (str){
-    // return str.split("").reverse().join("");
-    return str.split(" ").reverse().join(" ");
+    return str.split("").reverse().join("");
+    // returns the array reversed along with each letter reversed aswell
+    // return str.split(" ").reverse().join(" ");
+//    return the array reversed with the words intact
 }
 console.log(revNumbers("the dog is brown"));
 console.log(revNumbers("1, 2, 3, 4, 5, "));
@@ -40,4 +42,4 @@ function arrayOfMultiples (num, length) {
     return result;
 }
 
-console.log(arrayOfMultiples(4,9));
+console.log(arrayOfMultiples(5,5));
