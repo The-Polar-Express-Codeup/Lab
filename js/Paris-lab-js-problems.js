@@ -50,3 +50,5 @@ function nextEdge(side1, side2) {
         return;
     }
 }
+
+console.log(nextEdge(8,4));
