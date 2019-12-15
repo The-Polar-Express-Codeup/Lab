@@ -20,6 +20,28 @@
         text.style.fontFamily = "Comic Sans MS";
         text.style.color = "green";
     }
+
+// Question 2:
+// Your friend is trying to write a function that removes all vowels from a string. They write:
+//
+//     function removeVowels(str) {
+//         return str.replace(/[aeiou]/, "")
+//     }
+// However, it seems that it doesn't work? Fix your friend's code so that it actually does remove all vowels.
+
+// Fix this incorrect code, so that all tests pass!
+function removeVowels(str) {
+    return str.replace(/[aeiou]/gi, '');
+}
+
+//gi modifier is used to do a case insensitive search of all occurrences of a regular expression in a string.
+
+console.log(removeVowels('ben')); //bn
+console.log(removeVowels('many')); //mny
+console.log(removeVowels('candy')); //cndy
+console.log(removeVowels('hello')); //hll
+console.log(removeVowels('apple')); //ppl
+console.log(removeVowels('fever')); //fvr
 </script>
 
 </body>
