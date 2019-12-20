@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+</head>
+<body>
+<p id ='text'>JavaScript Exercises - w3resource</p>
+<div>
+    <button id="jsstyle"
+            onclick="js_style()">Style</button>
+</div>
+
+<script>
+// Question 1:
+// Here is a sample html file with a submit button. Now modify the style of the paragraph text through javascript code.
+    function js_style()
+    {
+        text.style.fontSize = "14pt";
+        text.style.fontFamily = "Comic Sans MS";
+        text.style.color = "green";
+    }
+
+// Question 2:
+// Your friend is trying to write a function that removes all vowels from a string. They write:
+//
+//     function removeVowels(str) {
+//         return str.replace(/[aeiou]/, "")
+//     }
+// However, it seems that it doesn't work? Fix your friend's code so that it actually does remove all vowels.
+
+// Fix this incorrect code, so that all tests pass!
+function removeVowels(str) {
+    return str.replace(/[aeiou]/gi, '');
+}
+
+//gi modifier is used to do a case insensitive search of all occurrences of a regular expression in a string.
+
+console.log(removeVowels('ben')); //bn
+console.log(removeVowels('many')); //mny
+console.log(removeVowels('candy')); //cndy
+console.log(removeVowels('hello')); //hll
+console.log(removeVowels('apple')); //ppl
+console.log(removeVowels('fever')); //fvr
+
+/*TODO Problem 3 - 'Numbers to Letters' on Code Wars
+Given an array of numbers, you must return a string. The numbers correspond to the letters of the alphabet in reverse order: a=26, z=1 etc. You should also account for '!', '?' and ' ' that are represented by '27', '28' and '29' respectively.
+
+All inputs will be valid.
+*/
+
+function switcher(x) {
+    var alphabet = {
+        1:'z',
+        2:'y',
+        3:'x',
+        4:'w',
+        5:'v',
+        6:'u',
+        7:'t',
+        8:'s',
+        9:'r',
+        10:'q',
+        11:'p',
+        12:'o',
+        13:'n',
+        14:'m',
+        15:'l',
+        16:'k',
+        17:'j',
+        18:'i',
+        19:'h',
+        20:'g',
+        21:'f',
+        22:'e',
+        23:'d',
+        24:'c',
+        25:'b',
+        26:'a',
+        27:'!',
+        28:'?',
+        29:' '
+    }
+
+    var tmp = "";
+
+    x.forEach(function(y) {
+        tmp += alphabet[y];
+    });
+    return tmp;
+}
+
+console.log(switcher(['24', '12', '23', '22', '4', '26', '9', '8'])); // outputs 'codewars'
+console.log(switcher(['25','7','8','4','14','23','8','25','23','29','16','16','4'])); // outputs 'btswmdsbd kkw'
+console.log(switcher(['4', '24'])); // outputs 'wc'
+</script>
+
+</body>
+</html>
