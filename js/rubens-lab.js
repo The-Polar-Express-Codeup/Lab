@@ -30,3 +30,31 @@ assert(hasEvens([2, 5, 6]), true, "Exercise 71");
 assert(hasEvens([3, 3, 3]), false, "Exercise 71");
 assert(hasEvens([]), false, "Exercise 71");
 addToDone("Exercise 71 is correct.");
+
+// Exercise 72
+// Write a function definition named countEvens that takes in sequence of numbers and returns the number of even numbers
+function countEvens(arr){
+    var count = 0;
+    for (var i=0; i<arr.length; i++)
+        if(arr[i] % 2 ===0){
+            count ++;
+        }
+    return count;
+}
+assert(countEvens([1, 2, 3]), 1, "Exercise 72");
+assert(countEvens([2, 5, 6]), 2, "Exercise 72");
+assert(countEvens([3, 3, 3]), 0, "Exercise 72");
+assert(countEvens([5, 6, 7, 8]), 2, "Exercise 72");
+addToDone("Exercise 72 is correct.");
+
+// Exercise 77
+// Write a function definition named onlyPositiveEvens that takes in sequence of numbers and returns an array containing all the positive evens from the sequence
+function onlyPositiveEvens(arr){
+    var count = [];
+    for (var i=0; i<arr.length; i++){
+        if(arr[i] > 0 && arr[i] % 2 === 0){
+            count.push(arr[i]);
+        }
+    }
+    return count;
+}
