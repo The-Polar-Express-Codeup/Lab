@@ -1,3 +1,4 @@
+
 // Write a function definition named onlyPositiveEvens that takes in sequence of numbers and returns an array containing all the positive evens from the sequence
 function onlyPositiveEvens(arr){
     var count = [];
@@ -59,6 +60,7 @@ function persistence(num) {
         multiplyCount++;
         arr = product.toString().split("");
     }
+
     return multiplyCount;
 }
 
@@ -67,9 +69,4 @@ persistence(999); // 4
 persistence(4); // 0
 
 
-describe('Initial Tests', function () {
-    Test.assertEquals(persistence(39),3);
-    Test.assertEquals(persistence(4),0);
-    Test.assertEquals(persistence(25),2);
-    Test.assertEquals(persistence(999),4);
-});
+
